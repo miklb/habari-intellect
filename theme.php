@@ -71,5 +71,27 @@ class ReIntellect extends Theme
 		}
 
 	}
+	
+	public function action_form_comment( $form ) { 
+		$this->add_template('formcontrol_form', dirname(__FILE__).'/forms/formcontrol_form.php', true);
+		$this->add_template('formcontrol_submit', dirname(__FILE__).'/forms/formcontrol_submit.php', true);
+		$this->add_template( 'canon_email', dirname(__FILE__).'/forms/formcontrol_email.php' );
+		$this->add_template( 'canon_url', dirname(__FILE__).'/forms/formcontrol_url.php' );
+		$this->add_template('formcontrol_textarea', dirname(__FILE__).'/forms/formcontrol_textarea.php', true);
+		$this->add_template('formcontrol_text', dirname(__FILE__).'/forms/formcontrol_text.php', true);		
+		$form->cf_email->template = 'canon_email';
+		$form->cf_url->template = 'canon_url';
+		$form->append( 'fieldset', 'cf_commenterinfo', _t( 'Fill out the form below to leave a comment on the site. Comments may be moderated so if it does not appear immediately that is probably the case.' ) );
+		$form->move_before( $form->cf_commenterinfo, $form->cf_commenter );
+		$form->cf_commenter->move_into($form->cf_commenterinfo);
+		$form->cf_email->move_into( $form->cf_commenterinfo );
+		$form->cf_url->move_into( $form->cf_commenterinfo );
+		$form->append('fieldset', 'cf_contentbox' );
+		$form->move_before($form->cf_contentbox, $form->cf_content);
+
+		$form->cf_content->move_into($form->cf_contentbox);
+		$form->cf_submit->caption = _t( 'Submit' );
+		
+	}
 }
 ?>

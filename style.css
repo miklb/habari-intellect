@@ -191,15 +191,15 @@ section#contact-di aside p.pd-appr-budget label, section#contact-di aside p.pd-a
 /* Send Message Form NEEDS TO BE CONVERTED TO HTML5 */
 
 section#comment-message { display:block; padding-top:18px; border-top:6px solid #dddddc; }
-form#send-message, #message-sent { /*border:1px dotted #ababac; border-top:0; background-color:#f1f1f0;*/ }
-form#send-message p.intro { margin-bottom:12px; padding:0 0 12px 0; font-size:12px; font-style:italic; line-height:16px; color:#777776; border-bottom:1px solid #ddddde; }
-form#send-message p.intro strong { padding-bottom:2px; display:block; font-size:14px; font-style:italic; font-weight:bold; line-height:18px; color:#333332; }
+form#comment-public, #message-sent { /*border:1px dotted #ababac; border-top:0; background-color:#f1f1f0;*/ }
+form#comment-public p.intro { margin-bottom:12px; padding:0 0 12px 0; font-size:12px; font-style:italic; line-height:16px; color:#777776; border-bottom:1px solid #ddddde; }
+form#comment-public p.intro strong { padding-bottom:2px; display:block; font-size:14px; font-style:italic; font-weight:bold; line-height:18px; color:#333332; }
 
-form#send-message fieldset { border:0; }
-form#send-message fieldset.sender-message { padding-top:12px; clear:both; border-top:1px dotted #ddddde; }
-form#send-message fieldset p { position:relative; }
+form#comment-public fieldset { border:0; }
+form#comment-public fieldset.sender-message { padding-top:12px; clear:both; border-top:1px dotted #ddddde; }
+form#comment-public fieldset p { position:relative; }
 
-form#send-message input, form#send-message select, form#send-message textarea
+form#comment-public input, form#comment-public select, form#comment-public textarea
 {
 	width:218px;
 	margin-bottom:12px;
@@ -215,25 +215,25 @@ form#send-message input, form#send-message select, form#send-message textarea
 	background-color:#f1f1f0;
 }
 
-form#send-message select { color:#777776; }
-form#send-message .sender-question { padding:12px 0; border-top:1px dotted #ddddde; }
-form#send-message .sender-question p { font-size:12px; line-height:16px; color:#777776; }
-form#send-message .sender-question p strong { display:block; padding-bottom:3px; font-weight:normal; color:#333332; }
-form#send-message .sender-question p input { width:170px !important; margin-bottom:3px; }
-form#send-message .sender-question p em { }
+form#comment-public select { color:#777776; }
+form#comment-public .sender-question { padding:12px 0; border-top:1px dotted #ddddde; }
+form#comment-public .sender-question p { font-size:12px; line-height:16px; color:#777776; }
+form#comment-public .sender-question p strong { display:block; padding-bottom:3px; font-weight:normal; color:#333332; }
+form#comment-public .sender-question p input { width:170px !important; margin-bottom:3px; }
+form#comment-public .sender-question p em { }
 
-form#send-message p.legend { margin-bottom:24px; font-size:12px; line-height:16px; }
-form#send-message p.legend span { display:block; font-size:10px; letter-spacing:1px; line-height:16px; text-transform:uppercase; }
+form#comment-public p.legend { margin-bottom:24px; font-size:12px; line-height:16px; }
+form#comment-public p.legend span { display:block; font-size:10px; letter-spacing:1px; line-height:16px; text-transform:uppercase; }
 
-form#send-message fieldset.sender-message input { width:314px; }
-form#send-message textarea { width:458px; height:172px; margin-bottom:6px; }
+form#comment-public fieldset.sender-message input { width:314px; }
+form#comment-public textarea { width:458px; height:172px; margin-bottom:6px; }
 
 label.overlabel { font-size:14px; line-height:18px; color:#777776; }
 label.overlabel-apply { position:absolute; top:5px; left:5px; font-size:14px; line-height:18px; color:#777776; z-index:1; }
 
-form#send-message button#submit-button { width:136px; height:42px; padding:0; cursor:pointer; border:0; background:url("images/submit-button.png") 0 0 no-repeat; }
-form#send-message button#submit-button:hover { background-position:0 -46px; }
-form#send-message button#submit-button span { display:none; }
+form#comment-public button#submit-button { width:136px; height:42px; padding:0; cursor:pointer; border:0; background:url("images/submit-button.png") 0 0 no-repeat; }
+form#comment-public button#submit-button:hover { background-position:0 -46px; }
+form#comment-public button#submit-button span { display:none; }
 
 #message-sent dd, #message-sent ul li { padding-bottom:12px; font-size:12px; font-style:italic; line-height:16px; }
 #message-sent ul li { font-style:normal; }

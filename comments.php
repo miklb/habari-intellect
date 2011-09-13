@@ -40,7 +40,7 @@
 	}
 	?>
 		
-<?php if ( ! $post->info->comments_disabled ) { include_once( 'commentform.php' ); } ?>
+<?php $post->comment_form()->out(); ?>
 
 </div>
 <!-- /comments -->
